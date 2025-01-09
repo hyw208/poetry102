@@ -1,23 +1,29 @@
 
+# Installation and running
+1. make test
+2. cd test
+3. python -m venv venv
+4. source ./venv/bin/activate
+5. pip install poetry102
+6. uvicorn poetry102.main:app
+   
 # TODO
 1. add tox, ruff, formating  
 2. experiment with black flake8 isort mypy pylint
 
-# installation 
+# Installation for dev 
 1. pyenv
 2. poetry 
 3. poetry plugin add poetry-plugin-shell
 
-
 # References 
-1. pyenv: 
+1. pyenv: https://opensource.com/article/20/4/pyenv 
 2. poetry intro: https://realpython.com/dependency-management-python-poetry/
 3. poetry doc: https://python-poetry.org/docs/cli/
 4. poetry and pytest and coverage: https://dev.to/iamibi/add-coverage-report-with-pytest-and-gitlab-ci-3e9p
 5. pytest conf: https://docs.pytest.org/en/stable/reference/reference.html#ini-options-ref
 6. coverage conf: https://coverage.readthedocs.io/en/6.4.3/cmd.html#cmd
 7. make: https://github.com/mapsa/makefile-examples (or use poetry shell)
-
 
 # Commands
 1. poetry new <folder> --src (or poetry new <folder>)
@@ -39,3 +45,6 @@
 17. poetry run xyz2 (run script defined in toml, need to do 'poetry install' first)
 18. poetry run uvicorn --factory poetry102.main:app (xxxxxx not working all of a sudden)
 19. poetry run fastapi src/poetry102/main.py
+20. poetry publish -u __token__ -p <token>
+
+
