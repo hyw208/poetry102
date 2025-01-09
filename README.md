@@ -37,3 +37,5 @@
 15. poetry export --output requirements.txt
 16. poetry run which python
 17. poetry run xyz2 (run script defined in toml, need to do 'poetry install' first)
+18. poetry run uvicorn --factory poetry102.main:app (xxxxxx not working all of a sudden)
+19. poetry run fastapi src/poetry102/main.py
