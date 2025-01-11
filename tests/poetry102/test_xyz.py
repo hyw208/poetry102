@@ -6,4 +6,9 @@ def test_xyz():
 
 def test_abc():
     from other_package.abc import func
+    print('hello')
     assert func() == "abc"
+
+# # vs code default won't find the other_package.abc
+# if __name__ == "__main__":
+#     test_abc()
