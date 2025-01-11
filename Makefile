@@ -38,4 +38,15 @@ build:
 .PHONY: publish
 publish: 
 	poetry publish
-	
+
+# Run python interactive
+.PHONY: python
+python: 
+	poetry run python
+
+# Activate env
+.PHONY: act
+act: 
+	poetry env info --path | eval
+	# source "$(poetry env info --path)/bin/activate"
+	# poetry run python

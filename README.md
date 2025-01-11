@@ -7,9 +7,14 @@
 5. pip install poetry102
 6. uvicorn poetry102.main:app
    
+# Repo
+https://github.com/hyw208/poetry102
+
 # TODO
-1. add tox, ruff, formating  
-2. experiment with black flake8 isort mypy pylint
+1. https://www.pythoncheatsheet.org/blog/python-projects-with-poetry-and-vscode-part-1
+2. https://www.pythoncheatsheet.org/blog/python-projects-with-poetry-and-vscode-part-2
+3. add tox, ruff, formating  
+4. experiment with black flake8 isort mypy pylint
 
 # Installation for dev 
 1. pyenv
@@ -37,14 +42,15 @@
 9. poetry config --list
 10. poetry add requests (or requests==2.25.1 "beautifulsoup4<4.10")
 11. poetry add pytest coverage --dev
-12. poetry remove requests
-13. poetry lock (or poetry lock --no-update if no updating deps to latest versions)
-14. poetry show --latest --top-level (or poetry show --tree)
-15. poetry export --output requirements.txt
-16. poetry run which python
-17. poetry run xyz2 (run script defined in toml, need to do 'poetry install' first)
-18. poetry run uvicorn --factory poetry102.main:app (xxxxxx not working all of a sudden)
-19. poetry run fastapi src/poetry102/main.py
-20. poetry publish -u __token__ -p <token>
+12. poetry add -D flake8 mypy
+13. poetry remove requests
+14. poetry lock (or poetry lock --no-update if no updating deps to latest versions)
+15. poetry show --latest --top-level (or poetry show --tree)
+16. poetry export --output requirements.txt
+17. poetry run which python
+18. poetry run xyz2 (run script defined in toml, need to do 'poetry install' first)
+19. poetry run uvicorn --factory poetry102.main:app (xxxxxx not working all of a sudden)
+20. poetry run fastapi src/poetry102/main.py
+21. poetry publish -u __token__ -p <token>
 
 

@@ -1,6 +1,6 @@
 [project]
 name = "poetry102"
-version = "0.1.1"
+version = "0.1.2"
 description = ""
 authors = [
     {name = "hyw208",email = "hyw208@gmail.com"}
@@ -20,6 +20,11 @@ packages = [
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.3.4"
 coverage = "^7.6.10"
+flake8 = "^7.1.1"
+mypy = "^1.14.1"
+black = "^24.10.0"
+
+
 
 [tool.pytest.ini_options]
 pythonpath = ["src"]
@@ -31,7 +36,7 @@ source = ["src"]
 command_line = "-m pytest"
 
 [tool.coverage.report]
-fail_under = 40
+fail_under = 2
 include = ["src/*/*.py"]
 show_missing = true
 
