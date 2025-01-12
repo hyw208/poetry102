@@ -8,16 +8,18 @@
             // tested to be good
             "name": "Python Debugger: One Source",
             "type": "debugpy",
+            "python": "${workspaceFolder}/.venv/bin/python",
             "request": "launch",
             "program": "${file}",
             "env": {
                 "PYTHONPATH": "${workspaceFolder}/src"
-            },
+            }
         },
         {
             // tested to be good 
             "name": "Python Debugger: poetry102.fast:app",
             "type": "debugpy",
+            "python": "${workspaceFolder}/.venv/bin/python",
             "request": "launch",
             "module": "uvicorn",
             "cwd": "${workspaceFolder}",
@@ -29,11 +31,12 @@
                 "--reload"
             ],"env": {
                 "PYTHONPATH": "${workspaceFolder}/src"
-            },
+            }
         },
         {
             "name": "Python Debugger: One Test",
             "type": "debugpy",
+            "python": "${workspaceFolder}/.venv/bin/python",
             "request": "launch",
             "module": "pytest",
             "args": [
@@ -46,6 +49,7 @@
             // tested to be good 
             "name": "Python Debugger: All Tests",
             "type": "debugpy",
+            "python": "${workspaceFolder}/.venv/bin/python",
             "request": "launch",
             "module": "pytest",
             "cwd": "${workspaceFolder}",
