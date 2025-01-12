@@ -15,6 +15,23 @@
             },
         },
         {
+            // tested to be good 
+            "name": "Python Debugger: poetry102.fast:app",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "uvicorn",
+            "cwd": "${workspaceFolder}",
+            "justMyCode": false,
+            "args": [
+                "poetry102.fast:app",
+                "--host", "0.0.0.0",
+                "--port", "8000",
+                "--reload"
+            ],"env": {
+                "PYTHONPATH": "${workspaceFolder}/src"
+            },
+        },
+        {
             "name": "Python Debugger: One Test",
             "type": "debugpy",
             "request": "launch",
@@ -34,23 +51,5 @@
             "cwd": "${workspaceFolder}",
             "console": "integratedTerminal"
         }
-        // not tested
-        // {
-        //     "name": "Pizzas service",
-        //     "type": "python",
-        //     "request": "launch",
-        //     "pythonPath": "${workspaceFolder}/backend/pizzas/.venv/bin/python",
-        //     "cwd": "${workspaceFolder}/backend/pizzas",
-        //     "module": "uvicorn",
-        //     "justMyCode": false,
-        //     "args": [
-        //         "src.main:app",
-        //         "--host",
-        //         "0.0.0.0",
-        //         "--port",
-        //         "8000",
-        //         "--reload"
-        //     ]
-        // }
     ]
 }

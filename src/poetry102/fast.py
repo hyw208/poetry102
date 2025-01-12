@@ -1,6 +1,8 @@
 from fastapi import FastAPI
 
 def app():
+    from other_package.abc import func_abc
+    from poetry102.xyz import func_xyz
     _api = FastAPI()
 
     @_api.get("/")
