@@ -22,6 +22,12 @@
 9. For more details on running and debugging with VS Code, see doc/102.md
 
 
+# To publish to PYPI
+1. Get PYPI api token and set as env var, eg. export PYPI_API_TOKEN=<your pypi api token here>
+2. run 'poetry build' or 'make build'
+3. run 'make publish'
+
+
 # Installation and running
 1. make test
 2. cd test

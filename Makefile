@@ -37,7 +37,7 @@ build:
 
 .PHONY: publish
 publish: 
-	poetry publish
+	poetry publish -u __token__ -p "$(PYPI_API_TOKEN)"
 
 # Run python interactive
 .PHONY: python
