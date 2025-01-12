@@ -4,7 +4,22 @@
 3. Use pyenv & poetry for python installation/management
 4. Use poetry for build and publish
 5. Use python 3.12.7, pytest, coverage, flake8, mypy, black 
-   
+
+
+# To install and use 
+1. <TBD>
+
+
+# To develop
+1. Install pyenv & poetry (with brew on mac)
+2. In mac terminal, clone this poetry102 and open vscode, 'code poetry102'
+3. Open vscode terminal and run cmd 'poetry env use 3.12.7' (** this create empty .venv under poetry102 folder **)
+4. Run 'poetry install' to populate .venv with required dependencies, build and install code
+5. To verify, run 'poetry run pip list' to see eg. pytest, coverage are installed properly
+6. Now run src/poetry102/xyz.py with poetry script xyz, run 'poetry install' then 'poetry run xyz' (it's a bit flaky, retry if needed)
+7. When you see xyz as output, it's all set to start development
+
+
 # Installation and running
 1. make test
 2. cd test
@@ -13,8 +28,10 @@
 5. pip install poetry102
 6. uvicorn poetry102.main:app
    
+
 # Repo
 https://github.com/hyw208/poetry102
+
 
 # TODO
 1. https://www.pythoncheatsheet.org/blog/python-projects-with-poetry-and-vscode-part-1
@@ -22,10 +39,11 @@ https://github.com/hyw208/poetry102
 3. add tox, ruff, formating  
 4. experiment with black flake8 isort mypy pylint
 
+
 # Installation for dev 
 1. pyenv
 2. poetry 
-3. poetry plugin add poetry-plugin-shell
+
 
 # References 
 1. pyenv: https://opensource.com/article/20/4/pyenv 
@@ -35,6 +53,7 @@ https://github.com/hyw208/poetry102
 5. pytest conf: https://docs.pytest.org/en/stable/reference/reference.html#ini-options-ref
 6. coverage conf: https://coverage.readthedocs.io/en/6.4.3/cmd.html#cmd
 7. make: https://github.com/mapsa/makefile-examples (or use poetry shell)
+
 
 # Commands
 1. poetry new <folder> --src (or poetry new <folder>)
