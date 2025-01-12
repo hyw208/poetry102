@@ -49,6 +49,20 @@ python:
 act: 
 	poetry env activate
 
+# Deactivate virtual env
 .PHONY: deact
 deact: 
 	deactivate
+
+# Create & populate virtual env
+.PHONY: mvenv
+mvenv: 
+	poetry env use 3.12.7
+	poetry install 
+
+# Remove virtual env
+.PHONY: rmvenv
+rmvenv: 
+	rm -fr .venv || true
+
+
