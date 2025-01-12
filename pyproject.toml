@@ -42,6 +42,7 @@ show_missing = true
 output = "coverage.xml"
 
 [project.scripts]
+fast = "poetry102.fast:main"
 xyz = "poetry102.xyz:func_xyz"
 abc = "other_package.abc:func_abc"
 
