@@ -1,4 +1,10 @@
-
+# An empty python project for python dev & build & publish to pypi
+1. Integrated with Vs Code IDE & be able to run/debug code and tests
+2. Project structure supports multiple python packages & modules 
+3. Use pyenv & poetry for python installation/management
+4. Use poetry for build and publish
+5. Use python 3.12.7, pytest, coverage, flake8, mypy, black 
+   
 # Installation and running
 1. make test
 2. cd test
