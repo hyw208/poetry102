@@ -4,24 +4,53 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-        // {
-        //     "name": "Python Debugger: Python File",
-        //     "type": "debugpy",
-        //     "request": "launch",
-        //     "program": "${file}",
-        //     "pythonPath": "${workspaceFolder}/.venv/bin/python"
-        // }
         {
-            "name": "Python: Pytest",
+            // tested to be good
+            "name": "Python Debugger: One Source",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}/src"
+            },
+        },
+        {
+            "name": "Python Debugger: One Test",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "pytest",
+            "args": [
+                "${file}"
+            ],
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal"
+        },
+        {
+            // tested to be good 
+            "name": "Python Debugger: All Tests",
             "type": "debugpy",
             "request": "launch",
             "module": "pytest",
             "cwd": "${workspaceFolder}",
             "console": "integratedTerminal"
-            // "env": {
-            //     "PYTHONPATH": "${workspaceFolder}/src"
-            // },
-            // "envFile": "${workspaceFolder}/.env",
         }
+        // not tested
+        // {
+        //     "name": "Pizzas service",
+        //     "type": "python",
+        //     "request": "launch",
+        //     "pythonPath": "${workspaceFolder}/backend/pizzas/.venv/bin/python",
+        //     "cwd": "${workspaceFolder}/backend/pizzas",
+        //     "module": "uvicorn",
+        //     "justMyCode": false,
+        //     "args": [
+        //         "src.main:app",
+        //         "--host",
+        //         "0.0.0.0",
+        //         "--port",
+        //         "8000",
+        //         "--reload"
+        //     ]
+        // }
     ]
 }
