@@ -44,9 +44,11 @@ publish:
 python: 
 	poetry run python
 
-# Activate env
+# Echo activte command, need to then manually cope & paste
 .PHONY: act
 act: 
-	poetry env info --path | eval
-	# source "$(poetry env info --path)/bin/activate"
-	# poetry run python
+	poetry env activate
+
+.PHONY: deact
+deact: 
+	deactivate
