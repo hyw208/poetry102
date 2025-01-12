@@ -1,5 +1,5 @@
 # An empty python project for python dev & build & publish to pypi
-1. Integrated with Vs Code IDE & be able to run/debug code and tests
+1. Integrated with VS Code IDE & be able to run/debug code and tests
 2. Project structure supports multiple python packages & modules 
 3. Use pyenv & poetry for python installation/management
 4. Use poetry for build and publish
@@ -16,8 +16,10 @@
 3. Open vscode terminal and run cmd 'poetry env use 3.12.7' (** this create empty .venv under poetry102 folder **)
 4. Run 'poetry install' to populate .venv with required dependencies, build and install code
 5. To verify, run 'poetry run pip list' to see eg. pytest, coverage are installed properly
-6. Now run src/poetry102/xyz.py with poetry script xyz, run 'poetry install' then 'poetry run xyz' (it's a bit flaky, retry if needed)
-7. When you see xyz as output, it's all set to start development
+6. Now run src/poetry102/xyz.py with poetry script xyz, run 'poetry install' then 'poetry run xyz' 
+7. Or run 'poetry install' and then 'poetry run python src/poetry102/xyz.py' (poetry is a bit flaky, retry 'poetry install' if needed)
+8. When you see xyz as output, it's all set to start development
+9. For more details on running and debugging with VS Code, see doc/102.md
 
 
 # Installation and running
